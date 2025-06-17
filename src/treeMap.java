@@ -27,13 +27,13 @@ public class treeMap {
         tm.put("B", 2);
         // Getting values from the tree map
         int ans = tm.get("A");
-        System.out.println("Value of A: " + ans);
+        System.out.println(STR."Value of A: \{ans}");
         // Removing elements from the tree map
         tm.remove("B");
         // Iterating over the elements of the tree map
         for (String key : tm.keySet()) {
-            System.out.println("Key: " + key + ", Value: "
-                    + tm.get(key));
+            // keySet(): returns the keys in sorted order
+            System.out.println(STR."Key: \{key}, Value: \{tm.get(key)}");
         }
     }
 }
